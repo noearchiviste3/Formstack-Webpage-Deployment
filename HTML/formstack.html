@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Boston 311 - Graffiti Report</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+
+        body {
+            font-family: Arial,Baskerville,monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+        .navbar-container {
+            text-align: center;
+            background-color: #091F2F;
+            padding: 10px 0;
+        }
+
+        .navbar-container ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+        .navbar-container li{
+            display: inline;
+            float: left;
+        }
+        .navbar-container li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar-container li a:hover{
+            background-color: #111;
+        }
+        .header {
+            background: linear-gradient(45deg, #091f2f, #1b4b5a);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        .content {
+            margin: 25px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        form {
+            display: none;
+        }
+      .dropdown{
+          position: relative;
+          display: inline-block;
+          width: 200px;
+          height: 50px;
+      }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            width: 100%;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content{
+            height: auto;
+            display: block;
+        }
+        .dropdown button{
+            background-color: #F5F5F5;
+            color: black;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        .dropdown button:hover{
+            background-color: #E8E8E8;
+        }
+    </style>
+    <script>
+        function showForm() {
+            var select = document.getElementById('reportType');
+            var form = document.getElementById('graffiti-form');
+            if (select.value === 'Submit a Graffiti Report'){
+            form.style.display = 'block';
+            } else {
+            form.style.display = 'none';
+            }
+        }
+    
+    </script>
+    
+</head>
+<body>
+    <div class="navbar-container">
+        <ul>
+            <li><a href="index.html">Report an issue</a></li>
+            <li><a href="formstack.html">Top Service Requests</a></li>
+            <li><a href="about.html">Online Services</a></li>
+        </ul>
+    <div class="header">
+        <h1>Boston 311 - Graffiti Report</h1>
+    </div>
+    <div class="content">
+        <h2 style="text-align: left;"> Select a Report Type</h2>
+        <div class = "dropdown">
+            <button id="mybutton"
+                    onclick="location.href='https://keen360formstacktesst.formstack.com/forms/311_graffiti_report';" id="mybutton" class="float-left submit-button"
+            >Submit a Graffiti Report</button>
+            <div class = "dropdown-content">
+                <h3>Submit a Graffiti Report</h3>
+                <p>Use this form to report graffiti in your neighborhood.</p>
+            </div>
+        </div>
+
+</body>
+</html>
+</html>
