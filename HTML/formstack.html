@@ -59,6 +59,12 @@
         form {
             display: none;
         }
+        .dropdown-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
       .dropdown{
           position: relative;
           display: inline-block;
@@ -103,7 +109,7 @@
         }
     
     </script>
-    
+
 </head>
 <body>
     <div class="navbar-container">
@@ -126,6 +132,19 @@
                 <p>Use this form to report graffiti in your neighborhood.</p>
             </div>
         </div>
+        <div class = "dropdown">
+            <button id="potholeButton"
+                    onclick="location.href='https://keen360formstacktesst.formstack.com/forms/311_pothole_report';" id="potholeButton" class="float-left submit-button">
+                Submit a Pothole Report
+            </button>
+            <div class = "dropdown-content">
+                <h3>Submit a Pothole Report</h3>
+                <p>Use this form to report a pothole in your neighborhood.</p>
+        </div>
+        </div>
+    </div>
+    </div>
+
 
 </body>
 </html>
